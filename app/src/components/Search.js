@@ -5,7 +5,7 @@ import { fetchAction } from "../actions/searchActions";
 
 const Search = ({ fetchAction }) => {
 	const [search, setSearch] = useState("");
-	const [searchType, setSearchType] = useState("general");
+	const [searchType, setSearchType] = useState("q");
 
 	const handleTypeChange = e => {
 		setSearchType(e.target.value);
@@ -23,7 +23,7 @@ const Search = ({ fetchAction }) => {
 	return (
 		<div className="search">
 			<select form="searchForm" value={searchType} onChange={handleTypeChange}>
-				<option value="general">General</option>
+				<option value="q">General</option>
 				<option value="author">Author</option>
 				<option value="title">Title</option>
 			</select>
@@ -32,7 +32,7 @@ const Search = ({ fetchAction }) => {
 					type="text"
 					value={search || ""}
 					onChange={handleChange}
-					placeholder="Book Title"
+					placeholder="Search"
 				/>
 				<button type="submit">Search</button>
 			</form>

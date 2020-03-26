@@ -34,7 +34,7 @@ const Search = ({ fetchAction }) => {
 					onChange={handleChange}
 					placeholder="Search"
 				/>
-				<button type="submit">Search</button>
+				<button type="submit">Submit</button>
 			</form>
 		</div>
 	);

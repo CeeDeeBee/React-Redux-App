@@ -4,7 +4,7 @@ const Book = ({ book }) => {
 	return (
 		<div className="book">
 			<img
-				src={`http://covers.openlibrary.org/b/olid/${book.cover_edition_key}-M.jpg`}
+				src={`https://covers.openlibrary.org/b/olid/${book.cover_edition_key}-M.jpg`}
 				alt={book.title}
 			/>
 			<div className="book-info">

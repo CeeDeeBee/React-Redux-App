@@ -8,7 +8,7 @@ const BookList = ({ books, isLoading, error }) => {
 	return (
 		<div className="book-list">
 			{!books && !error && !isLoading && (
-				<h2>Enter a title in the search bar above to get started!</h2>
+				<h2>Search something in the bar above to get started!</h2>
 			)}
 			{books &&
 				!isLoading &&

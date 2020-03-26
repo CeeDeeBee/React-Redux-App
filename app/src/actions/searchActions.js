@@ -8,7 +8,7 @@ export const fetchAction = (search, searchType) => dispatch => {
 	dispatch({ type: FETCHING_BOOKS });
 	axios
 		.get(
-			`http://openlibrary.org/search.json?${searchType}=${search
+			`https://openlibrary.org/search.json?${searchType}=${search
 				.split(" ")
 				.join("+")}`
 		)
